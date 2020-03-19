@@ -1,7 +1,7 @@
 import app from "firebase/app";
 import "firebase/database";
 import FirebaseContext from "./context";
-const config = {
+const firebaseConfig = {
   apiKey: "AIzaSyATCLnWTkGsmqS1dyC5vdCWfdpk55qnvjw",
   authDomain: "election-6f2a7.firebaseapp.com",
   databaseURL: "https://election-6f2a7.firebaseio.com",
@@ -13,7 +13,7 @@ const config = {
 };
 class Firebase {
   constructor() {
-    app.initializeApp(config);
+    app.initializeApp(firebaseConfig);
     this.db = app.database();
   }
 }
