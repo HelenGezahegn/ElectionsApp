@@ -98,7 +98,7 @@ class ValidateVoterPage extends Component {
       .once("value", snapshot => {
         const hasVotedBefore = snapshot.numChildren();
         if (hasVotedBefore) {
-          // If want to revote, allow them to proceed by replacing their entry 
+          // If want to revote, allow them to proceed by replacing their entry
           const voterKey = Object.keys(snapshot.val())[0];
           firebase
             .database()
